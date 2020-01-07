@@ -1,6 +1,6 @@
 # Mimir
 A C++ POC for process injection using NtCreateSectrion, NtMapViewOfSection and RtlCreateUserThread. Credit to [@spotheplanet
-](https://twitter.com/spotheplanet).
+](https://twitter.com/spotheplanet) for his awesome notes.
 
 # Description
 
