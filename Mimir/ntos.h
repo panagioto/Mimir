@@ -41,9 +41,9 @@ typedef NTSTATUS(WINAPI* MyNtMapViewOfSection)(
 	IN HANDLE ProcessHandle,
 	IN OUT PVOID* BaseAddress OPTIONAL,
 	IN ULONG ZeroBits OPTIONAL,
-	IN ULONG CommitSize,
+	IN SIZE_T CommitSize,	//SIZE_T instead of ULONG
 	IN OUT PLARGE_INTEGER SectionOffset OPTIONAL,
-	IN OUT PULONG ViewSize,
+	IN OUT PSIZE_T ViewSize,	//PSIZE_T instead of PULONG
 	IN DWORD InheritDisposition,
 	IN ULONG AllocationType OPTIONAL,
 	IN ULONG Protect);
